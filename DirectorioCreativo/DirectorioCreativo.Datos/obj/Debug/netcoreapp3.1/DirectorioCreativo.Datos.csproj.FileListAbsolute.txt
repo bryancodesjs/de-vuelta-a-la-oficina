@@ -1,0 +1,75 @@
+C:\Users\luis eduardo\Desktop\new Industria y comercio\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.deps.json
+C:\Users\luis eduardo\Desktop\new Industria y comercio\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.runtimeconfig.json
+C:\Users\luis eduardo\Desktop\new Industria y comercio\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.runtimeconfig.dev.json
+C:\Users\luis eduardo\Desktop\new Industria y comercio\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.dll
+C:\Users\luis eduardo\Desktop\new Industria y comercio\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.pdb
+C:\Users\luis eduardo\Desktop\new Industria y comercio\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Entidades.dll
+C:\Users\luis eduardo\Desktop\new Industria y comercio\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Entidades.pdb
+C:\Users\luis eduardo\Desktop\new Industria y comercio\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.csprojAssemblyReference.cache
+C:\Users\luis eduardo\Desktop\new Industria y comercio\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.AssemblyInfoInputs.cache
+C:\Users\luis eduardo\Desktop\new Industria y comercio\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.AssemblyInfo.cs
+C:\Users\luis eduardo\Desktop\new Industria y comercio\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.csproj.CoreCompileInputs.cache
+C:\Users\luis eduardo\Desktop\new Industria y comercio\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.csproj.CopyComplete
+C:\Users\luis eduardo\Desktop\new Industria y comercio\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.dll
+C:\Users\luis eduardo\Desktop\new Industria y comercio\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.pdb
+C:\Users\luis eduardo\Desktop\new Industria y comercio\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.genruntimeconfig.cache
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.csprojAssemblyReference.cache
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.AssemblyInfoInputs.cache
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.AssemblyInfo.cs
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.csproj.CoreCompileInputs.cache
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.deps.json
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.runtimeconfig.json
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.runtimeconfig.dev.json
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.dll
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.pdb
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Entidades.dll
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Entidades.pdb
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.csproj.CopyComplete
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.dll
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.pdb
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.genruntimeconfig.cache
+C:\Users\luis.beltre\Desktop\Nueva carpeta\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.deps.json
+C:\Users\luis.beltre\Desktop\Nueva carpeta\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.runtimeconfig.json
+C:\Users\luis.beltre\Desktop\Nueva carpeta\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.runtimeconfig.dev.json
+C:\Users\luis.beltre\Desktop\Nueva carpeta\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.dll
+C:\Users\luis.beltre\Desktop\Nueva carpeta\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.pdb
+C:\Users\luis.beltre\Desktop\Nueva carpeta\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Entidades.dll
+C:\Users\luis.beltre\Desktop\Nueva carpeta\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Entidades.pdb
+C:\Users\luis.beltre\Desktop\Nueva carpeta\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.csprojAssemblyReference.cache
+C:\Users\luis.beltre\Desktop\Nueva carpeta\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.AssemblyInfoInputs.cache
+C:\Users\luis.beltre\Desktop\Nueva carpeta\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.AssemblyInfo.cs
+C:\Users\luis.beltre\Desktop\Nueva carpeta\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.csproj.CoreCompileInputs.cache
+C:\Users\luis.beltre\Desktop\Nueva carpeta\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.csproj.CopyComplete
+C:\Users\luis.beltre\Desktop\Nueva carpeta\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.dll
+C:\Users\luis.beltre\Desktop\Nueva carpeta\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.pdb
+C:\Users\luis.beltre\Desktop\Nueva carpeta\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.genruntimeconfig.cache
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural2\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.deps.json
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural2\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.runtimeconfig.json
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural2\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.runtimeconfig.dev.json
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural2\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.dll
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural2\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.pdb
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural2\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Entidades.dll
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural2\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Entidades.pdb
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural2\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.csprojAssemblyReference.cache
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural2\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.AssemblyInfoInputs.cache
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural2\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.AssemblyInfo.cs
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural2\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.csproj.CoreCompileInputs.cache
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural2\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.csproj.CopyComplete
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural2\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.dll
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural2\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.pdb
+C:\Users\martin.perez\Desktop\Ministerio de Cultura Oficial\DirectorioCreativo_Cultural2\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.genruntimeconfig.cache
+C:\Users\Marketing\Desktop\DirectorioCreativo_Cultural\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.deps.json
+C:\Users\Marketing\Desktop\DirectorioCreativo_Cultural\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.runtimeconfig.json
+C:\Users\Marketing\Desktop\DirectorioCreativo_Cultural\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.runtimeconfig.dev.json
+C:\Users\Marketing\Desktop\DirectorioCreativo_Cultural\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.dll
+C:\Users\Marketing\Desktop\DirectorioCreativo_Cultural\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Datos.pdb
+C:\Users\Marketing\Desktop\DirectorioCreativo_Cultural\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Entidades.dll
+C:\Users\Marketing\Desktop\DirectorioCreativo_Cultural\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\bin\Debug\netcoreapp3.1\DirectorioCreativo.Entidades.pdb
+C:\Users\Marketing\Desktop\DirectorioCreativo_Cultural\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.csprojAssemblyReference.cache
+C:\Users\Marketing\Desktop\DirectorioCreativo_Cultural\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.AssemblyInfoInputs.cache
+C:\Users\Marketing\Desktop\DirectorioCreativo_Cultural\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.AssemblyInfo.cs
+C:\Users\Marketing\Desktop\DirectorioCreativo_Cultural\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.csproj.CoreCompileInputs.cache
+C:\Users\Marketing\Desktop\DirectorioCreativo_Cultural\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.csproj.CopyComplete
+C:\Users\Marketing\Desktop\DirectorioCreativo_Cultural\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.dll
+C:\Users\Marketing\Desktop\DirectorioCreativo_Cultural\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.pdb
+C:\Users\Marketing\Desktop\DirectorioCreativo_Cultural\DirectorioCreativo_Cultural\DirectorioCreativo\DirectorioCreativo.Datos\obj\Debug\netcoreapp3.1\DirectorioCreativo.Datos.genruntimeconfig.cache

@@ -1,0 +1,77 @@
+<div class="container-fluid pt-5 mt-5 text-center">
+  <h2 class="mt-5 animate__animated animate__fadeInUp">Galeria de profesionales</h2>
+  <h3 class="text-lighter mb-5 animate__animated animate__fadeInUp delay-1">¡Encuentra profesionales del arte cerca de ti!</h3>
+</div>
+<div class="container-fluid d-flex justify-content-end">
+  <select #_select (change)=" Ordenar(_select.value) " >
+      <option value="" disabled>Ordenar por</option>
+      <option value="1"> Mas recientes</option>
+      <option value="2"> Mas populares</option>
+  </select>
+</div>
+<div class="container-fluid grid mt-3 mb-5 animate__animated animate__fadeIn delay-1" *ngIf="galeria"> <!-- d-flex flex-wrap justify-content-around -->
+  <div class="" *ngFor="let gallery of galeria" > <!-- card-out -->
+    <div class="home-img-wrapper overflow-hidden d-flex justify-content-center align-items-center" (click)="show(gallery)">
+      <img [src]="loading ? imgLoading : '/assets/img/' + gallery.imgObra" (error)="imagenError($event)">
+    </div>
+    <div class="info-wrap p-2 d-flex justify-content-between">
+      <div>
+        <h6 class="no-margin">{{ gallery.nombreObra }}</h6>
+        <a class="no-margin "  [routerLink]="['perfil/', gallery.id]"><i>{{ gallery.artista }}</i></a>
+      </div>
+      <div class="d-flex justify-content-end" style="min-width: 110px !important;">
+        <p class="mr10 ml10"><i *ngIf="gallery.valoraciones > 0" class="bi-heart-fill"></i> <i *ngIf="gallery.valoraciones == 0" class="bi-heart"></i> <span> {{ gallery.valoraciones }}</span></p>
+        <p><i class="bi bi-eye"></i> <span> {{ gallery.visitas }}</span></p>
+      </div>
+    </div>    
+  </div>
+</div>
+
+<div *ngIf="error">
+  <h1>Ha ocurrido un error, por favor intentelo mas tarde...</h1>
+</div>
+
+<!-- MODAL -->
+<div [style.display]="showModal ? 'block' : 'none'" class="modal" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog p-1">
+    <div class="d-flex about-artist justify-content-between">
+      <div class="info">
+        <h5>{{ obraModal.nombreObra }}</h5>
+        <div class="d-flex artist-and-date flex-wrap">
+          <a class="artist-link" [routerLink]="['perfil/', obraModal.id]">{{ obraModal.artista }}</a>
+          <p>- {{ obraModal.fechaRegistro | date: 'fullDate' }}</p>
+        </div>
+      </div>
+      <button class="btn modal-close-btn" (click)="hide()"><i class="bi bi-x-circle"></i></button>
+    </div>
+    <div class="modal-content rounded">
+   
+      <div class="modal-body">
+
+        <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel"> <!-- carousel-fade -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img [src]="'/assets/img/' + obraModal.imgObra" (error)="imagenError($event)" class="d-block w-100" alt="...">
+            </div>          
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex flex-column">
+        <div class="d-flex justify-content-center align-items-center h-100" style="min-width: 110px !important;">
+          <p class="mr10 ml10"><i class="bi bi-heart"></i> <span> {{ obraModal.valoraciones }}</span></p>
+          <p><i class="bi bi-eye"></i> <span> {{ obraModal.visitas }}</span></p>
+        </div>
+        <button type="button" class="btn btn-primary" ><i class="bi bi-chat-left-dots mr10"></i> Contactar a <span>{{ obraModal.artista }}</span></button>
+      </div>
+    </div>
+  </div>
+</div>

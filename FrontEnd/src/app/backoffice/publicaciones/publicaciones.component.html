@@ -1,0 +1,35 @@
+<section class="container mb-3" *ngFor="let items of obrasPendientes">
+    <div class="results-wrap">
+        <div class="result bg border round p-3 d-flex">
+            <div class="img-wrapper round overflow-hidden d-flex justify-content-center align-items-center">
+                <img [src]="'../../assets/img/' + items.imgObra" (error)="imagenError($event)" >
+            </div>
+            <div class="about-wrap d-flex flex-column justify-content-between">
+                <div class="about-text">
+                    <h4>{{ items.nombreObra }}</h4>
+                    <p>{{ items.descripcionObra }}</p>
+                </div>
+
+                <div class="about-author d-flex">
+                    <div class="author-img-wrap rounded-circle overflow-hidden d-flex justify-content-center align-items-center">
+                        <img src="../../assets/denice.PNG" alt="">
+                    </div>
+                    <div class="author-info">
+                        <h5>{{ items.artista }}</h5>
+                        <small><em>{{ items.profesion }}</em></small>
+                    </div>
+                </div>
+            </div>
+            <div class="actions-wrap d-flex justify-content-center align-items-center">
+                <button class="btn btn-primary" type="button" (click)="aprobarObra( items.id, $event )" ><i class="bi bi-check"></i> Aprobar</button>
+                <button class="btn delete-btn" (click)="rechazarObra( items.id, $event )" ><i class="bi bi-x-circle"></i> Rechazar</button>
+            </div>
+
+            
+        </div>
+    </div>
+</section> 
+
+<h1 *ngIf="obrasPendientes.length == 0">No tienes publicaciones pendientes</h1>
+
+

@@ -1,0 +1,164 @@
+<div class="container-fluid view-padding background pt-5">
+    <!-- breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#" routerLink="/">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Mi perfil</li>
+        </ol>
+    </nav>
+
+    <div class="d-flex profile-wrap">
+        <div class="col-lg-2  user-field background"> 
+            <div class="user-field-inner border round background-primary overflow-hidden">
+                <div class="mini-banner-wrapper w-100"></div>
+                <div class="user-data d-flex flex-column text-center align-items-center p-3">
+                    
+                    <div class="user-profile-img-wrapper border rounded-circle d-flex justify-content-center align-items-center overflow-hidden bg-light">
+                        <img src="" alt="">
+                    </div>
+                    <h4>Hola {{ currentUser }}!</h4>
+                    <h5>{{ infoUser?.profesion }}</h5>
+                    <!--<button class="btn btn-primary">Contacta a Dennice</button>-->
+                    <div class="socialmedia-wrap d-flex pt-2 pb-3">
+                        <a *ngIf="infoUser?.instagram == null" href=""><i class="bi bi-instagram"></i></a>
+                        <a *ngIf="infoUser?.instagram == null" href=""><i class="bi bi-facebook"></i></a>
+                        <a *ngIf="infoUser?.instagram == null" href=""><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            
+                <div class="about w-100 pt-3 pb-3 p-3">
+                    <p class="text-wraps">{{ infoUser?.descripcionGeneral }}</p>
+                </div>
+                <small class="p-3">Miembro desde <span>{{ infoUser?.fechaIngreso | date }}</span></small>
+            </div>
+        </div>
+        <div class="d-flex flex-column w-100"> <!--col-lg-10-->
+            <div class="d-flex statistics-wrap pl3">
+                <div class="d-flex justify-content-between background-primary statistics border round p-3 flex-wrap row">
+                    <div class="col-md-4 text-center">
+                        <h1>{{ obras?.length }}</h1>
+                        <h5><i class="bi bi-cloud-arrow-up pr"></i> Publicaciones</h5>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h1>{{ visitas }}</h1>
+                        <h5><i class="bi bi-eye"></i> Visitas</h5>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h1>00</h1>
+                        <h5><i class="bi bi-heart"></i> Valoraciones</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end mt-3 mb-2 pl3">
+                <button class="btn btn-primary post-btn" (click)="show()" *ngIf="infoUser.habilitado"><i class="bi bi-cloud-arrow-up pr"></i> Nueva Publicacion</button>
+                <!--<select name="" id="">
+                    <option value="" disabled>Ordenar por</option>
+                    <option value=""> Mas recientes</option>
+                    <option value=""> Mas populares</option>
+                </select>-->
+            </div>
+            
+            <div class="grid pl3" > <!-- thumbnails-wrap -->
+
+                <div class="alert alert-danger" *ngIf="infoUser.habilitado == false">
+                    <h1>Tu perfil ha sido rechazado</h1>
+                </div>
+
+                <div class="alert alert-danger" *ngIf="infoUser.habilitado == null">
+                    <h1>Tu perfil esta en proceso de revision.</h1>
+                </div>
+               
+                    <!-- Estado de aprobacion-->
+                    <div *ngFor="let items of obras" [ngClass]=" items.estadoObra == false ? 'rejected' : items.estadoObra == null ? 'pending' : '' ">
+
+                        <!-- estado de solicitud pendiente-->
+                        <div class="status d-flex justify-content-center align-items-center position-absolute"  *ngIf="items.estadoObra == null">
+                            <h4 class="p-3"><img id="statusSpinner" class="rotate" src="../../assets/img/spinner.svg" width="15px"
+                                    height="15px"> En proceso</h4>
+                        </div>
+
+                        <!-- estado de solicitud rechazado-->
+                        <div class="status d-flex justify-content-center align-items-center position-absolute" *ngIf="items.estadoObra == false">
+                            <h4 class="p-3 text-warning"><i class="bi bi-exclamation-circle"></i> No aprobado</h4>
+                        </div>
+
+                        <div class="home-img-wrapper overflow-hidden d-flex justify-content-center align-items-center">
+                            <!-- thumbnail -->
+                            <img [src]=" '../../../assets/img/' + items.imgObra" (error)="imagenError($event)">
+                        </div>
+                        <div class="info-wrap p-2 d-flex justify-content-between">
+                            <div>
+                                <h6 class="no-margin">{{ items.nombreObra }}</h6>
+                                <a class="no-margin " routerLink="/dashboard"><i>Yo</i></a>
+                            </div>
+                            <div class="d-flex justify-content-end" style="min-width: 110px !important;">
+                                <p class="mr10 ml10"><i class="bi bi-heart"></i> <span> {{ items.valoraciones }}</span></p>
+                                <p><i class="bi bi-eye"></i> <span>{{ items.visitas }}</span></p>
+                            </div>
+                        </div>
+                    </div>  
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- MODAL -->
+
+<div [style.display]="showModal ? 'block' : 'none'" class="modal" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog post-modal">
+      <div class="modal-content p-2">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Nueva Publicacion</h4>
+        </div>
+        <div class="modal-body">         
+
+            <form id="postForm" [formGroup]="publicacionForm" (ngSubmit)="submitPublicacion()">
+                <div class="form-group mt-3 d-flex justify-content-center align-items-center flex-column">
+                    <label class="mb-4">Buscar en mi dispositivo</label>
+                    <!-- boton de subir archivos-->
+                    <div class="file-upload">
+                        <input type="file" class="form-control-file" accept="image/*" (change)="onChange($event)">
+                        <i class="bi bi-arrow-up-short"></i>
+                    </div>
+
+                    <!-- mini vista previa de archivo en memoria -->
+                    <div class="form-group mt-5" *ngIf="imgBase64">
+                        <div class="mini-vista-img-wrap rounded d-flex justify-content-center align-items-center">
+                            <img [src]="imgBase64"  />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group mt-4">
+                  <label for="exampleInputEmail1">Titulo</label>
+                  <input type="email" class="form-control" placeholder="Nombre de la obra" formControlName="nombreObra">                  
+                </div>
+                <div class="form-group mt-1">
+                  <label for="exampleInputPassword1">Descripción</label>
+                  <textarea class="form-control" row="3" placeholder="Descripcion" formControlName="descripcionObra"></textarea> 
+                </div>
+
+                <div class="form-group mt-1">
+                    <label>Ubicacion <i class="bi bi-pin-map-fill"></i></label>
+                    <select class="form-control" formControlName="ubicacion" >
+                      <option value="" selected disabled>Click para seleccionar</option>
+                      <option value="1">Santo Domingo</option>
+                      <option value="2">Santiago</option>
+                      <option value="3">La Romana</option>                      
+                    </select>
+                </div>
+              
+                <div class="form-group mt-3 d-flex justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" (click)="hide()">Cancelar</button>
+                    <button type="submit" class="btn btn-primary" data-dismiss="modal">Publicar</button>
+                </div>
+                  
+            </form>
+
+        </div>
+       
+      </div>
+    </div>
+</div>

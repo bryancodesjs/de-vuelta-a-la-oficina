@@ -1,0 +1,147 @@
+
+<div class="container-fluid view-padding background pt-5 mb-5 background-z-2">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#" routerLink="/">Inicio</a></li>
+          <li class="breadcrumb-item" aria-current="page"><a href="" routerLink="/dashboard">Mi perfil</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Configuracion</li>
+        </ol>
+    </nav>
+
+    <section class="container pt-5">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="list-group">
+                    <button (click)="select('misdatos')" type="button" [ngClass]="misDatos ? 'list-group-item list-group-item-action active' : 'list-group-item list-group-item-action' "><i class="bi bi-person"></i> Mis Datos</button>
+                    <button (click)="select('personalizacion')" type="button" [ngClass]="personalizacion ? 'list-group-item list-group-item-action active' : 'list-group-item list-group-item-action' "><i class="bi bi-brush"></i> Personalizacion</button>
+                    <button (click)="select('contacto')" type="button" [ngClass]="contacto ? 'list-group-item list-group-item-action active' : 'list-group-item list-group-item-action' "><i class="bi bi-chat-text"></i> Contacto</button>
+                    <button (click)="select('seguridad')" type="button" [ngClass]="seguridad ? 'list-group-item list-group-item-action active' : 'list-group-item list-group-item-action' "><i class="bi bi-shield-lock"></i> Seguridad</button>
+                </div>
+            </div>
+            <div class="col-lg-9" *ngIf="misDatos || personalizacion || contacto || seguridad" >
+                <div class="d-flex background border rounded flex-column background-z-3">
+                   
+                    <div class="p-4" *ngIf="misDatos">
+                        <h4>Mis Datos</h4>
+                        <form [formGroup]="misDatosForm" (ngSubmit)="submitMisDatos()">
+                            <div class="mb-3">
+                              <label class="form-label">Nombre</label>
+                              <input type="text" class="form-control" formControlName="nombre">                             
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Apellido</label>
+                                <input type="text" class="form-control" formControlName="apellido">                                
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label">Profesion</label>
+                              <select formControlName="profesion" class="form-control">
+                                 <option *ngIf="misDatosForm.value?.profesion" [value]="misDatosForm.value?.profesion">{{ misDatosForm.value?.profesion }}</option>
+                                 <option *ngIf="!misDatosForm.value?.profesion" value="" disabled selected>Seleccione</option>                                  
+                                  <option value="Fotografo">Fotografo</option>
+                                  <option value="Escritor">Escritor</option>
+                                  <option value="Cantante">Cantante</option>
+                              </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="profesion" class="form-label">Acerca de mi</label>
+                                <textarea class="form-control"formControlName="descripcion" cols="30" rows="5"></textarea>
+                              </div>
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                          </form>
+                    </div>
+
+                    <hr>
+
+                    <div class="p-4" *ngIf="personalizacion">
+                        <h4>Personalizacion</h4>
+                        <div class="d-flex w-100 flex-wrap">
+                            <div class="col-lg-6 d-flex justify-content-center flex-column align-items-center">
+                                <label>Foto de Perfil</label>
+                                <div class="config-profile-pic-wrap">
+                                    <img src="../../assets/denice.PNG" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-center flex-column align-items-center">
+                                <label>Foto de Portada</label>
+                                <div class="config-profile-banner-wrap d-flex justify-content-center align-items-center">
+                                    <img src="../../assets/banner-img/banner-1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Guardar</button>
+                    </div>
+                    
+                    <hr>
+
+                    <div class="p-4" *ngIf="contacto">
+                        <h4>Contacto</h4>
+                        <form [formGroup]="contactoForm" (ngSubmit)="submitMisDatos()">
+                            <div class="d-flex w-100 flex-wrap justify-content-between">
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="twitter" class="form-label"><i class="bi bi-twitter"></i> Twitter</label>
+                                        <input type="text" class="form-control" id="twitter" value="bcampos0827">
+                                    </div>
+                        
+                                    <div class="mb-3">
+                                        <label for="Facebook" class="form-label"><i class="bi bi-facebook"></i> Facebook</label>
+                                        <input type="text" class="form-control" formControlName="facebook">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="youtube" class="form-label"><i class="bi bi-youtube"></i> Youtube</label>
+                                        <input type="text" class="form-control"  formControlName="youtube">
+                                    </div>
+                        
+                                    <div class="mb-3">
+                                        <label for="instagram" class="form-label"><i class="bi bi-instagram"></i> Instagram</label>
+                                        <input type="text" class="form-control" formControlName="instagram">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Correo Electronico</label>
+                                <input type="email" class="form-control" formControlName="email">                                
+                            </div>
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                        </form>
+                    </div>
+
+                    <hr>
+
+                    <div class="p-4" *ngIf="seguridad">
+                        <h4>Seguridad</h4>
+                        <form [formGroup]="nuevaClaveForm" (ngSubmit)="submitSeguridad()">
+                            <div class="mb-3">
+                                <label class="form-label">Contraseña Actual</label>
+                                <input formControlName="actual" type="password" class="form-control" placeholder="Contraseña actual">
+                                <div *ngIf="submit && seguridadControls.actual.errors">
+                                    <p class="form-text text-danger" *ngIf="seguridadControls.actual.errors.required">Contraseña actual.</p>
+                                </div>
+                            </div>
+                          
+                            <div class="mb-3">
+                                <label for="newPassword" class="form-label">Nueva Contraseña</label>
+                                <input type="password" class="form-control" formControlName="nueva" placeholder="Su nueva contraseña" >
+                                <div *ngIf="submit && seguridadControls.nueva.errors">
+                                    <p class="form-text text-danger" *ngIf="seguridadControls.nueva.errors.required">Digite su nueva contraseña.</p>
+                                </div>
+                                <div> <p class="form-text text-danger" *ngIf="errorClave">Las contraseñas no coinciden.</p> </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="passwordConfirmation" class="form-label">Confirmar Contraseña</label>
+                                <input type="password" class="form-control" formControlName="confirmar_nueva" placeholder="Confirmar nueva contraseña">
+                                <div *ngIf="submit && seguridadControls.confirmar_nueva.errors">
+                                    <p class="form-text text-danger" *ngIf="seguridadControls.confirmar_nueva.errors.required">Confirme contraseña.</p>
+                                </div>
+                                <div> <p class="form-text text-danger" *ngIf="errorClave">Las contraseñas no coinciden.</p> </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
